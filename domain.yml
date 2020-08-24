@@ -1,0 +1,69 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- corona_intro
+- corona_spread
+- corona_food_spread
+- warm_weather
+- high_risk
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: "Here is something to cheer you up:\nGo fucking die!"
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_corona_intro:
+  - text: Coronaviruses are large group of viruses that cause illness in humans and
+      animals. Rarely, animal coronaviruses can evolve and infect people and then
+      spread between people such as has been seen with MERS and SARS. Although most
+      human coronavirus infections are mild, the epidemics of the severe acute respiratory
+      syndrome coronavirus (SARS-CoV) and Middle East respiratory syndrome coronavirus
+      (MERS-CoV), have caused more than 10,000 cumulative cases in the past two decades,
+      with mortality rates of 10% for SARS-CoV.
+  utter_corona_spread:
+  - text: People can catch COVID-19 from others who have the virus. The disease can
+      spread from person to person through small droplets from the nose or mouth which
+      are spread when a person with COVID-19 coughs or exhales. These droplets land
+      on objects and surfaces around the person.
+  utter_corona_food_spread:
+  - text: Current evidence on other coronavirus strains shows that while coronaviruses
+      appear to be stable at low and freezing temperatures for a certain period, food
+      hygiene and good food safety practices can prevent their transmission through
+      food.
+  utter_warm_weather:
+  - text: From the evidence so far, the COVID-19 virus can be transmitted in ALL AREAS,
+      including areas with hot and humid weather. Regardless of climate, adopt protective
+      measures if you live in, or travel to an area reporting COVID-19. The best way
+      to protect yourself against COVID-19 is by frequently cleaning your hands. By
+      doing this you eliminate viruses that may be on your hands and avoid infection
+      that could occur by then touching your eyes, mouth, and nose.
+  utter_high_risk:
+  - text: COVID-19 is often more severe in people 60+yrs or with health conditions
+      like lung or heart disease, diabetes or conditions that affect their immune
+      system.​
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_did_that_help
+- utter_corona_intro
+- utter_corona_spread
+- utter_corona_food_spread
+- utter_warm_weather
+- utter_high_risk
